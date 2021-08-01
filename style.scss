@@ -1,0 +1,20 @@
+$color-primary: orange;
+$color-secondary: darkblue;
+$color-additional: lightgreen;
+
+h1 {
+    text-decoration: underline;
+    text-align: center;
+    color: $color-primary;
+}
+
+p {
+    color: $color-secondary;
+}
+
+p, div {
+    & + ul {
+        color: $color-primary;
+    }
+}
+
