@@ -12,9 +12,23 @@ p {
     color: $color-secondary;
 }
 
+//w poniższym przypadku nie potrzeba selektora rodzica
 p, div {
-    & + ul {
+    + ul {
         color: $color-primary;
     }
 }
 
+a {
+    &.link {
+        color: $color-additional;
+    }
+}
+
+.style {
+    list-style-type: square;
+}
+
+.ordered-style {
+    list-style-type: upper-alpha;
+}

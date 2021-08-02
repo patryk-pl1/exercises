@@ -11,4 +11,16 @@ p {
 p + ul, div + ul {
   color: orange;
 }
+
+a.link {
+  color: lightgreen;
+}
+
+.style {
+  list-style-type: square;
+}
+
+.ordered-style {
+  list-style-type: upper-alpha;
+}
 /*# sourceMappingURL=style.css.map */
