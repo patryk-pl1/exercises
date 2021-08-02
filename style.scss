@@ -27,8 +27,20 @@ a {
 
 .style {
     list-style-type: square;
+    font-size: 120%;
 }
 
-.ordered-style {
+.ordered-style { 
+    color: $color-secondary;
     list-style-type: upper-alpha;
+
+    li:nth-child(2n) {
+        text-decoration: underline;
+        font-style: italic;
+    }
+    li:nth-child(2n + 1) {
+        text-decoration: line-through;
+        font-weight: lighter;
+    }
 }
+

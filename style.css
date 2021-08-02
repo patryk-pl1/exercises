@@ -18,9 +18,21 @@ a.link {
 
 .style {
   list-style-type: square;
+  font-size: 120%;
 }
 
 .ordered-style {
+  color: darkblue;
   list-style-type: upper-alpha;
+}
+
+.ordered-style li:nth-child(2n) {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.ordered-style li:nth-child(2n + 1) {
+  text-decoration: line-through;
+  font-weight: lighter;
 }
 /*# sourceMappingURL=style.css.map */
