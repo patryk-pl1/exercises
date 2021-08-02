@@ -22,6 +22,7 @@ p, div {
 a {
     &.link {
         color: $color-additional;
+        border: solid black 2px;
     }
 }
 
@@ -41,6 +42,23 @@ a {
     li:nth-child(2n + 1) {
         text-decoration: line-through;
         font-weight: lighter;
+    }
+    li:hover {
+        border: solid $color-additional 2px;
+    } 
+}
+
+.obramowanie {
+    border: solid black 2px;
+    padding: 10px;
+    background-color: lightgray;
+    width: 33%;
+    
+    &:first-letter {
+        font-size: 300%;
+        padding: 0 5px;
+        float: left;
+        font-family: sans-serif;
     }
 }
 

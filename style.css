@@ -14,6 +14,7 @@ p + ul, div + ul {
 
 a.link {
   color: lightgreen;
+  border: solid black 2px;
 }
 
 .style {
@@ -34,5 +35,23 @@ a.link {
 .ordered-style li:nth-child(2n + 1) {
   text-decoration: line-through;
   font-weight: lighter;
+}
+
+.ordered-style li:hover {
+  border: solid lightgreen 2px;
+}
+
+.obramowanie {
+  border: solid black 2px;
+  padding: 10px;
+  background-color: lightgray;
+  width: 33%;
+}
+
+.obramowanie:first-letter {
+  font-size: 300%;
+  padding: 0 5px;
+  float: left;
+  font-family: sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
