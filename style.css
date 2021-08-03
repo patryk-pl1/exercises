@@ -1,3 +1,7 @@
+p:last-of-type {
+  margin-top: 50px;
+}
+
 h1 {
   text-decoration: underline;
   text-align: center;
@@ -132,5 +136,24 @@ a.link {
 
 .navbar li:hover > ul {
   display: block;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: lightgray;
+  margin-top: 50px;
+  width: 450px;
+}
+
+.container > div {
+  background-color: #ffc966;
+  border: solid #2525ff 2px;
+  border-radius: 5px;
+  width: 200px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -2,6 +2,10 @@ $color-primary: orange;
 $color-secondary: darkblue;
 $color-additional: lightgreen;
 
+p:last-of-type {
+    margin-top: 50px;
+}
+
 h1 {
     text-decoration: underline;
     text-align: center;
@@ -142,4 +146,19 @@ a {
     }
 
    
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgray;
+    margin-top: 50px;
+    width: 450px;
+
+    > div {
+        background-color: lighten($color-primary, 20%);
+        border: solid lighten($color-secondary, 30%) 2px;
+        border-radius: 5px;
+        width: 200px;
+    }
 }
