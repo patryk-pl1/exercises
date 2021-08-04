@@ -165,4 +165,42 @@ a.link {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
 }
+
+@-webkit-keyframes example {
+  0% {
+    background-color: orange;
+  }
+  50% {
+    background-color: darkblue;
+  }
+  100% {
+    background-color: lightgreen;
+  }
+}
+
+@keyframes example {
+  0% {
+    background-color: orange;
+  }
+  50% {
+    background-color: darkblue;
+  }
+  100% {
+    background-color: lightgreen;
+  }
+}
+
+.animacja {
+  width: 150px;
+  height: 150px;
+  background-color: orange;
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+}
 /*# sourceMappingURL=style.css.map */

@@ -171,3 +171,19 @@ a {
         flex: 1 1 auto;
     }
 }
+
+@keyframes example {
+    0% { background-color: $color-primary; }
+    50% { background-color: $color-secondary;}
+    100% { background-color: $color-additional;}
+}
+
+.animacja {
+    width: 150px;
+    height: 150px;
+    background-color: $color-primary;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: 3;
+}
