@@ -138,22 +138,31 @@ a.link {
   display: block;
 }
 
+.mniejszy {
+  width: 250px;
+  margin-bottom: 10px;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   background-color: lightgray;
   margin-top: 50px;
   width: 450px;
+  row-gap: 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .container > div {
   background-color: #ffc966;
   border: solid #2525ff 2px;
   border-radius: 5px;
-  width: 200px;
+  width: 100px;
+  height: 40px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 /*# sourceMappingURL=style.css.map */

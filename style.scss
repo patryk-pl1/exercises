@@ -148,17 +148,26 @@ a {
    
 }
 
+.mniejszy {
+    width: 250px;
+    margin-bottom: 10px;
+}
+
 .container {
     display: flex;
-    justify-content: space-between;
     background-color: lightgray;
     margin-top: 50px;
     width: 450px;
+    //column-gap: 15px;
+    row-gap: 15px;
+    flex-wrap: wrap;
 
     > div {
         background-color: lighten($color-primary, 20%);
         border: solid lighten($color-secondary, 30%) 2px;
         border-radius: 5px;
-        width: 200px;
+        width: 100px;
+        height: 40px;
+        flex: 1 1 auto;
     }
 }
