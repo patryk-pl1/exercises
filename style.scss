@@ -187,3 +187,47 @@ a {
     animation-delay: 1s;
     animation-iteration-count: 3;
 }
+
+
+.wrapper {
+    margin-top: 25px;
+    padding: 1px;
+    border: 2px solid $color-primary;
+    background-color: lighten($color-primary, 40%);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+
+    > div {
+        background-color: lighten($color-primary, 30%);
+        border: 2px solid darken($color-primary, 0%);
+        padding: 5px;
+        border-radius: 5px;
+        color: darken($color-primary, 20%);
+    }
+}
+
+.box1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+.box2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.box3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.box4 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
