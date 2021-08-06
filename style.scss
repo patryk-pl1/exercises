@@ -190,44 +190,80 @@ a {
 
 
 .wrapper {
-    margin-top: 25px;
-    padding: 1px;
     border: 2px solid $color-primary;
-    background-color: lighten($color-primary, 40%);
+    background-color: lightgray;
+    margin-top: 25px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: 
+        "hd  hd  hd  hd   hd   hd   hd   hd  hd"
+        "sbl sbl .   main main main main sbr sbr"
+        "sbl sbl .   main main main main sbr sbr"
+        "ft  ft  ft  ft   ft   ft   ft   ft  ft";
 
     > div {
-        background-color: lighten($color-primary, 30%);
-        border: 2px solid darken($color-primary, 0%);
-        padding: 5px;
+        border: 2px solid green;
         border-radius: 5px;
-        color: darken($color-primary, 20%);
+        background-color: lighten($color-primary, 15%);
     }
+
+    @media (max-width:500px) {
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "hd"   
+            "sbl"   
+            "main"   
+            "sbr"   
+            "ft";  
+    }
+
+    .box11 {
+        grid-area: hd;
+    }
+
+    .box12 {
+        grid-area: sbl;
+    }
+
+    .box13 {
+        grid-area: main;
+    }
+
+    .box14 {
+        grid-area: sbr;
+    }
+
+    .box15 {
+        grid-area: ft;
+    }
+
+    
 }
 
-.box1 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 4;
-}
-.box2 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
-.box3 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-.box4 {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 4;
+.nazwane {
+    margin-top: 50px;
+    border: 2px solid $color-secondary;
+    padding: 1px;
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: [hd-start] 1fr 1fr 1fr [hd-end];
+    grid-auto-rows: minmax(100px, auto);
+    column-gap: 10px;
+    row-gap: 1em;
+
+    > div {
+        border: 2px solid green;
+        background-color: lightblue;
+    }
+
+    .box1 {
+        grid-column-start: hd-start;
+        grid-column-end: hd-end;
+        grid-row: 1 / 2;
+    }
+
+    .box2 {
+        grid-column: -1 / -3;
+    }
 }
