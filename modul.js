@@ -1,0 +1,1 @@
+export var zm1 = 10;
