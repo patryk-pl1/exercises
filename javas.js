@@ -18,7 +18,42 @@ y();
     console.log('Wywołaj')
 }());
 
-import {zm1, zm2} from "./modules/modul.js";
+import funkcja, * as abc from "./modules/modul.js"
 
-console.log(zm1);
-console.log(zm2);
+console.log(abc.zm1);
+funkcja();
+//abc.zm1 = 10;
+
+
+/* Klasy */
+
+class Klasa {
+    constructor(a, b) {
+        this.x = a;
+        this.y = b;
+    }
+
+    gimmeXY() {
+        return this.x * this.y;
+    }
+}
+
+var k1 = new Klasa(6, 9);
+console.log(k1.gimmeXY());
+
+class Klasa2 extends Klasa {
+    constructor(a,b,c) {
+        super(a,b);
+        this.z = c;
+    }
+
+    gimmeXYZ() {
+        return super.gimmeXY() * this.z;
+    }
+}
+
+var k2 = new Klasa2(5, 15, 25);
+console.log(k2.x);
+console.log(k2.y);
+console.log(k2.z);
+console.log(k2.gimmeXYZ());
