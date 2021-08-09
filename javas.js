@@ -1,5 +1,5 @@
-document.defaultView.addEventListener("load",() =>
-    console.log("wydarzenie"));
+//document.defaultView.addEventListener("load",() =>
+ //   console.log("wydarzenie"));
 
 
 function a() {
@@ -18,10 +18,10 @@ y();
     console.log('Wywołaj')
 }());
 
-import funkcja, * as abc from "./modules/modul.js"
+//import funkcja, * as abc from "./modules/modul.js"
 
-console.log(abc.zm1);
-funkcja();
+//console.log(abc.zm1);
+//funkcja();
 //abc.zm1 = 10;
 
 
@@ -57,3 +57,31 @@ console.log(k2.x);
 console.log(k2.y);
 console.log(k2.z);
 console.log(k2.gimmeXYZ());
+
+function Dog(name, breed, weight) {
+    this.name = name;
+    this.breed = breed;
+    this.weight = weight;
+
+    this.funkcja = function() {
+        this.dlugosc = 10;
+    };
+}
+
+Dog.prototype.bark = function () {
+    console.log("Szczeka");
+}
+
+var pies = new Dog("burek", "jamnik", 12);
+console.log(pies.name);
+
+if (pies instanceof Dog) {
+    console.log("pies jest instancją Dog");
+}
+
+delete pies.weight;
+console.log(pies.weight);
+pies.bark();
+
+pies.funkcja();
+console.log(pies.dlugosc);
