@@ -11,8 +11,8 @@ function a() {
     return b;
 }
 
-const y = a();
-y();
+const yy = a();
+yy();
 
 (function teraz() {
     console.log('Wywołaj')
@@ -85,3 +85,54 @@ pies.bark();
 
 pies.funkcja();
 console.log(pies.dlugosc);
+
+function t() {
+    return [1,2,3];
+}
+var [,b] = t();
+console.log(b);
+
+function o() {
+    return {
+        x: 4,
+        y: 5,
+        z: 6
+    }
+}
+
+var {x: x, y: y, z: z} = o();
+console.log(x, y, z);
+
+console.log(false && "napis");
+
+var p = new Promise( function(resolve, reject) {
+
+})
+
+setTimeout(() => {
+    console.log("Czas")
+}, 500)
+
+
+var obiekt ={
+    x: 10,
+    y() {
+        console.log(this.x);
+    }
+}
+
+obiekt.y();
+
+var ob ={
+    x: 3,
+    y: 4,
+    z: 5,
+    x: 14
+};
+var {x: x, ...y} = ob;
+var newob = {
+    ...ob, 
+    x: 12
+};
+
+console.log(newob);
