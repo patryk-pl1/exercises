@@ -247,9 +247,8 @@ a.link {
 
 .wrapper .box13 {
   -ms-grid-row: 2;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
   grid-area: main;
 }
 
@@ -262,9 +261,9 @@ a.link {
 }
 
 .wrapper .box15 {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 9;
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 6;
   grid-area: ft;
 }
 
@@ -299,5 +298,79 @@ a.link {
 
 .nazwane .box2 {
   grid-column: -1 / -3;
+}
+
+.kontener {
+  background-color: lightgray;
+  margin-top: 50px;
+  color: blue;
+  border: 2px solid green;
+  width: 500px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+  row-gap: 15px;
+}
+
+.kontener div {
+  background-color: yellow;
+  border: 2px solid black;
+  width: 150px;
+}
+
+.kontener-grid {
+  margin-top: 50px;
+  background-color: lightgray;
+  border: 2px solid gray;
+  width: 500px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[9];
+      grid-template-columns: repeat(9, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+      grid-template-areas: "hd hd hd hd hd hd hd hd hd" "main main main main main main sd sd sd" ". . . ft ft ft ft ft ft";
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 15px;
+}
+
+.kontener-grid div {
+  background-color: lightblue;
+  border: 1px solid blue;
+}
+
+.kontener-grid .p-grid1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 9;
+  grid-area: hd;
+}
+
+.kontener-grid .p-grid2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: main;
+}
+
+.kontener-grid .p-grid3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 3;
+  grid-area: sd;
+}
+
+.kontener-grid .p-grid4 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 6;
+  grid-area: ft;
 }
 /*# sourceMappingURL=style.css.map */
