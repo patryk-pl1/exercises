@@ -9,3 +9,5 @@ const dodanyObiekt = {
 }
 
 const zmienna = 5;
+
+var nowazmienna;
