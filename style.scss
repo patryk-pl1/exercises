@@ -340,3 +340,51 @@ a {
         grid-area: ft;
     }
 }
+
+//toast
+#toastid {
+    height: 100px;
+    width : 350px;
+    background-color:lightblue;
+    display: none;
+    align-content: flex-start;
+
+    .title {
+        width: 330px;
+        line-height: 150%;
+        align-self: flex-start;
+        border-bottom: 2px solid black;
+    }
+
+    .close {
+        //margin-left: auto;
+        width: 20px;
+        line-height: 150%;
+        align-self: flex-start;
+        border-bottom: 2px solid black;
+    }
+    .tekst {
+        align-self: flex-start;
+
+    }
+}
+
+//przycisk
+.toast {
+    margin-top: 50px;
+    background-color: lightblue;
+    border: none;
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+
+    &:active {
+        background-color: lightgray;;
+    }
+}
+
+.toastKontener {
+    //display: flex;
+    flex-wrap: wrap;
+
+}

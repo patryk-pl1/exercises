@@ -373,4 +373,52 @@ a.link {
   -ms-grid-column-span: 6;
   grid-area: ft;
 }
+
+#toastid {
+  height: 100px;
+  width: 350px;
+  background-color: lightblue;
+  display: none;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+#toastid .title {
+  width: 330px;
+  line-height: 150%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  border-bottom: 2px solid black;
+}
+
+#toastid .close {
+  width: 20px;
+  line-height: 150%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  border-bottom: 2px solid black;
+}
+
+#toastid .tekst {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.toast {
+  margin-top: 50px;
+  background-color: lightblue;
+  border: none;
+  height: 50px;
+  width: 150px;
+  border-radius: 5px;
+}
+
+.toast:active {
+  background-color: lightgray;
+}
+
+.toastKontener {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 /*# sourceMappingURL=style.css.map */
